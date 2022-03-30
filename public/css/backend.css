@@ -1,0 +1,147 @@
+/* General Settings */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Top Navigation  */
+.topNav {
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 55px;
+    box-shadow: 0 5px 21px -5px #cdd1e1;
+}
+.topNav .nav-link {
+    font-size:1.4rem !important;
+}
+
+
+/* SIDEBAR STYLE */
+#sidebar {
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: all 0.3s;
+    border-right: 1px solid #cdd1e1;
+}
+.sidenav .menu p {
+    padding: 0.5rem 0 .5rem 2rem;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background: #f3f3f3;
+}
+
+.sidenav.active {
+    margin-left: -180px;
+}
+.sidenav .navbar-brand {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    margin: 0;
+    text-align: center;
+    min-height: 55px;
+    box-shadow: 0 5px 21px -5px #cdd1e1;
+}
+
+.sidenav .menu {
+    padding: 25px 0 25px 0;
+}
+.sidenav .menu li a {
+    align-items: center;
+    padding-top: .8rem;
+    padding-left: 18px;
+    padding-bottom: .8rem;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    color: inherit;
+}
+
+.sidenav .menu li a:hover {
+    background: #cdd1e1;
+    text-decoration: none;
+}
+
+.nav-link-icon {
+    margin-right:12px;
+    text-align: center;
+}
+
+.sidenav .menu li a[data-toggle="collapse"]  {
+    position: relative;
+}
+
+.sidenav .menu li .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* sub menu */
+.sidenav .submenu {
+    background: #fff;
+}
+
+.sidenav .submenu li a {
+    padding:0.7rem 0 0.7rem 3.5rem ;
+    margin-top: 0;
+    color: inherit;
+}
+
+.sidenav .submenu li a::before {
+    left: 2.5rem;
+    top: 10px;
+    width: 16px;
+    content: "»";
+    position: absolute;
+    display: inline-block;
+}
+
+/* CONTENT STYLE */
+#content {
+    width: calc(100% - 180px);
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#content.active {
+    width: 100%;
+}
+.yield-content {
+    padding: 25px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -180px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 180px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+/* General Settings */
+html,body {
+    position: relative; /* Allows the footer to notice content height */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #4f4f4f;
+    background: #fff;
+}
+
+a { text-decoration: none;}
+
+.alert {
+    padding: 0.3rem 0.3rem;
+}
+
+/*  CARD STYLES */
+.card{
+    width: 100%;
+    min-width: 100%;
+    border-radius:0;
+    padding: 0;
+    border:1px solid rgba(0,0,0,0.08);
+    box-shadow: #cbd2d6 0 1px 4px 0;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.card-header  {
+    background: #fff;
+}
+.card-header:first-child {
+    border-radius:0;
+}
