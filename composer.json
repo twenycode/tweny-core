@@ -1,5 +1,9 @@
 {
     "name": "twenycode/tweny-core",
+    "type": "library",
+    "description": "The Laravel Framework.",
+    "keywords": ["template","base setup"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "TwenyCode\\TwenyCore\\": "src/"
