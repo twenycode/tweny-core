@@ -1,0 +1,16 @@
+{
+    "name": "twenycode/tweny-core",
+    "autoload": {
+        "psr-4": {
+            "TwenyCode\\TwenyCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antweny Sawe",
+            "email": "antweny@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
