@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\IndexController::class,'index'])->name('default');
 Route::get('dashboard', [App\Http\Controllers\IndexController::class,'dashboard'])->name('dashboard');
 
-
 Auth::routes();
-
 
 //// Authentication Routes...
 //Route::get('login', [App\Http\Controllers\Auth\LoginController::class,'showLoginForm'])->name('login');
@@ -20,14 +18,15 @@ Auth::routes();
 //Route::post('register', [App\Http\Controllers\Auth\RegisterController::class,'register']);
 //
 //// Password Reset Routes...
-//Route::get('password/reset', [App\Http\Controllers\Auth\ForgotPasswordController::class,'showLinkRequestForm'])->name('password.email');
+//Route::get('password/reset', [App\Http\Controllers\Auth\ForgotPasswordController::class,'showLinkRequestForm']);
 //Route::post('password/email', [App\Http\Controllers\Auth\ForgotPasswordController::class,'sendResetLinkEmail']);
-//Route::get('password/reset/{token}', [App\Http\Controllers\Auth\ResetPasswordController::class,'showResetForm'])->name('password.request');
-//Route::post('password/reset', [App\Http\Controllers\Auth\ResetPasswordController::class,'reset'])->name('password.reset');
+//Route::get('password/reset/{token}', [App\Http\Controllers\Auth\ResetPasswordController::class,'showResetForm']);
+//Route::post('password/reset', [App\Http\Controllers\Auth\ResetPasswordController::class,'reset']);
 
 // user roles
-Route::prefix('role/')->name('roles.')->group(function () {
+Route::prefix('roles/')->name('roles.')->group(function () {
     Route::get('index', [App\Http\Controllers\Auth\RoleController::class,'index'])->name('index');
+    Route::get('create', [App\Http\Controllers\Auth\RoleController::class,'create'])->name('create');
     Route::post('store', [App\Http\Controllers\Auth\RoleController::class,'store'])->name('store');
     Route::get('edit/{role}', [App\Http\Controllers\Auth\RoleController::class,'edit'])->name('edit');
     Route::put('update/{role}', [App\Http\Controllers\Auth\RoleController::class,'update'])->name('update');
@@ -35,8 +34,9 @@ Route::prefix('role/')->name('roles.')->group(function () {
 });
 
 //  user role permissions
-Route::prefix('permission/')->name('permissions.')->group(function () {
+Route::prefix('permissions/')->name('permissions.')->group(function () {
     Route::get('index', [App\Http\Controllers\Auth\PermissionController::class,'index'])->name('index');
+    Route::get('create', [App\Http\Controllers\Auth\PermissionController::class,'create'])->name('create');
     Route::post('store', [App\Http\Controllers\Auth\PermissionController::class,'store'])->name('store');
     Route::get('edit/{permission}', [App\Http\Controllers\Auth\PermissionController::class,'edit'])->name('edit');
     Route::put('update/{permission}', [App\Http\Controllers\Auth\PermissionController::class,'update'])->name('update');

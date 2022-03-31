@@ -21,7 +21,6 @@
 
             <!-- content -->
             <div class="yield-content">
-                @include('flash::message')
                 @yield('content')
             </div>
         </div>

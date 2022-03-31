@@ -5,7 +5,7 @@ html,body {
     position: relative; /* Allows the footer to notice content height */
     min-height: 100vh;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #4f4f4f;
     background: #fff;
 }
@@ -16,7 +16,12 @@ a { text-decoration: none;}
     padding: 0.3rem 0.3rem;
 }
 
-/*  CARD STYLES */
+/*  Form Style  */
+.form-delete {
+    display: inline;
+}
+
+/*  Card Style  */
 .card{
     width: 100%;
     min-width: 100%;
@@ -27,9 +32,91 @@ a { text-decoration: none;}
     margin-bottom: 1.5rem;
     overflow: hidden;
 }
+.card-title {
+    color: #FFF;
+    border-color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: none;
+}
 .card-header  {
-    background: #fff;
+    border-bottom: 0;
 }
 .card-header:first-child {
     border-radius:0;
 }
+
+/*  Button Style    */
+.btn-primary {background: #0866c6;border-color:#0866c6; color: white;}
+.btn-outline-primary {color: #0866c6;border-color:#0866c6;}
+.btn-outline-primary {color: #0866c6;border-color:#0866c6;}
+.btn-outline-primary:hover { background:#0866c6;border-color:#0866c6;}
+
+.btn-danger {border-color:#dc3545; background:#dc3545; color: white; }
+.btn-outline-danger {color: #dc3545; border-color:#dc3545; }
+.btn-outline-danger:hover { background:#dc3545; }
+
+.btn-dark {border-color:black; background:black;color: white; }
+.btn-outline-dark  {color: black; border-color:black; }
+.btn-outline-dark:hover { background:black; }
+
+.btn-success {border-color:#23BF08; background:#23BF08;color: white; }
+.btn-outline-success {color: #23BF08; border-color:#23BF08; }
+.btn-outline-success:hover { background:#23BF08; }
+
+.btn-metallic-yellow  {border-color:#FDD116; background:#FDD116;color: #000; }
+.btn-outline-metallic-yellow  {color: #FDD116; border-color:#FDD116; }
+.btn-outline-metallic-yellow :hover { background:#FDD116; }
+
+.btn-vivid-cerulean {border-color:#00A3DE; background:#00A3DE;color: #fff; }
+.btn-outline-vivid-cerulean {color: #000; border-color:#00A3DE; }
+.btn-outline-vivid-cerulean:hover { background:#00A3DE;color: #fff; }
+
+/*  Background Styles   */
+.bg-primary{background:#0866c6 !important; color: white;}
+.bg-olive{border-color:#808000; background:#808000;}
+.bg-blue { background: #044687;color:white; }
+.bg-red {border-color:red; background:red; }
+.bg-green {border-color:#23BF08; background:#23BF08; }
+.bg-orange {border-color:orange; background:orange;}
+.bg-purple {border-color:purple; background:purple; }
+.bg-black {border-color:black; background: black; }
+.bg-dark {border-color:#343a40;; background: #343a40;; }
+.bg-pink {border-color:deeppink; background:deeppink; }
+.bg-maroon {border-color:maroon; background:maroon; }
+.bg-gray {border-color:gray; background:gray; }
+.bg-chocolate {border-color:chocolate; background:chocolate;}
+.bg-yellow{border-color:yellow; background:yellow; }
+.bg-gray-blue{border-color:#e9ecef; background:#e9ecef; }
+.bg-slateblue{border-color:#6A5ACD; background:#6A5ACD; }
+.bg-olive{border-color:#808000; background:#808000; }
+.bg-steelblue{border-color:#4682B4; background:#4682B4; }
+.bg-dark-gray { border-color: #1f2937; background: #1f2937; }
+.bg-american-green {border-color: #1FB53A; background: #1FB53A;}
+.bg-metallic-yellow {border-color: #FDD116; background: #FDD116;}
+.bg-vivid-cerulean {border-color: #00A3DE; background:#00A3DE;}
+
+/*  Text Styles    */
+.text-primary{color:#04519b;}
+.text-success{color:#23BF08;}
+.text-olive{color:#808000;}
+.text-blue { color: #044687; }
+.text-red {color:red; }
+.text-green {color:#23BF08; }
+.text-orange {color:orange;}
+.text-purple {color:purple; }
+.text-black {color: black; }
+.text-dark {color: #343a40;; }
+.text-pink {color:deeppink; }
+.text-maroon {color:maroon; }
+.text-gray {color:gray; }
+.text-chocolate {color:chocolate;}
+.text-yellow{color:yellow; }
+.text-gray-blue{color:#e9ecef; }
+.text-slateblue{color:#6A5ACD; }
+.text-olive{color:#808000; }
+.text-steelblue{color:#4682B4; }
+.text-dark-gray {color: #1f2937; }
+.text-american-green {color: #1FB53A;}
+.text-metallic-yellow {color: #FDD116;}
+.text-vivid-cerulean {color:#00A3DE;}

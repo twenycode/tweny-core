@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CoreController extends Controller
 {
+
     // model variable
     protected $model;
 
@@ -110,7 +111,7 @@ class CoreController extends Controller
     protected function updating($request, $id)
     {
         try {
-            $this->model->update($id,$request->validated());
+            $this->model->find($id)->update($request->validated());
             return $this->successRoute($this->route,'Updated Successfully');
         }
         catch (Exception $e) {
@@ -122,12 +123,14 @@ class CoreController extends Controller
     protected function destroy($id,$msg = 'Deleted Successfully')
     {
         try {
-            $this->model->destroy($id);
+            $this->model->find($id)->delete();
             return $this->success($msg);
         }
         catch (Exception $e) {
             return $this->error('Record not Found');
         }
     }
+
+
 
 }
