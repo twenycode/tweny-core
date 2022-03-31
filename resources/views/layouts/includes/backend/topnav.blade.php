@@ -1,7 +1,7 @@
-<nav class="topNav navbar navbar-expand bg-white">
+<nav class="topNav navbar navbar-expand bg-primary">
 
     <div class="container-fluid">
-        <button id="sidebarCollapse" class="btn border-1 order-lg-0"> <i class="fas fa-bars"></i> </button>
+        <button id="sidebarCollapse" class="btn border-1 order-lg-0"> <i class="fas fa-bars text-white"></i> </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
